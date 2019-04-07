@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700'); 
+ 
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ecf0f1;
+}
+
+body.dark {
+	background: rgb(114, 113, 113);
+}
+
+body.dark .box {
+	background: rgb(44, 44, 44);
+	box-shadow: none;
+}
+
+body.dark .aside {
+	background: #ecf0f1;	
+}
+
+body.dark h1, body.dark h2, body.dark .task {
+	color: whitesmoke;
+}
+
+body.dark section #todoInput {
+	color: whitesmoke;
+	border-bottom: 1px solid white;
+}
+
+body.dark #todoInput::placeholder {
+	color: whitesmoke;
+	opacity: 0.4;
+}
+
+body.dark #select-theme {
+	color: rgb(97, 97, 97);
+}
+
+/* .light {
+	background: greenyellow;
+} */
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+	width: 45vw;
+	min-height: 85%;
+	/* margin: 0 auto; */
+	background: white;
+	box-shadow: #858d94 -2px 2px 7px;
+}
+
+.aside {
+	background: rgb(97, 97, 97);
+	display: flex;
+	flex-direction: column;
+	padding: 150px 5px 0 5px;
+	align-items: center;
+}
+
+#dark:focus {
+	opacity: 0;
+	transition: 1s ease-in;
+}
+
+#light:focus {
+	opacity: 0;
+	transition: 1s ease-in;
+}
+
+#select-theme {
+	color: whitesmoke;
+	font-size: 0.8em;
+}
+
+.btn {
+	min-width: 70px;
+	min-height: 26px;
+	margin: 6px 0;
+}
+
+/*****************************HEADER STYLES*****************************/
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	padding-top: 0px;
+	color: #2c3e50;
+}
+header h1 span {
+	font-weight: 700;
+}
+header h2 {
+	color: #636566;
+	font-weight:300;
+}
+/*****************************FORM STYLES*****************************/
+
+.form {
+	width: 800px;
+	margin: 50px auto 20px;
+}
+
+#todoInput {
+	width: 45vw;
+	height: 60px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #34495e;
+	outline: none;
+	font: 300 28px 'Ubuntu', sans-serif;
+	padding: 20px;
+	color: #34495e;
+}
+
+/*****************************LIST STYLES*****************************/
+.list {
+	width: 800px;
+	margin: 0 auto;
+}
+.task {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #34495e;
+	transition: all .3s ease;
+}
+.task:hover {
+	background: rgba(0, 0, 0, .02);
+	cursor: pointer;
+}
+
+.task:hover span{
+	opacity: 1;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+
+li span {
+  float: right;
+  color: #c0392b;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+li span:hover {
+  color: #e74c3c
+}
